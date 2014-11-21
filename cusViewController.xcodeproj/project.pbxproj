@@ -15,6 +15,8 @@
 		2913C7871A1A388D00ADAE5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2913C7861A1A388D00ADAE5A /* Images.xcassets */; };
 		2913C78A1A1A388D00ADAE5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2913C7881A1A388D00ADAE5A /* LaunchScreen.xib */; };
 		2913C7961A1A388E00ADAE5A /* cusViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2913C7951A1A388E00ADAE5A /* cusViewControllerTests.m */; };
+		2913C7A21A1A398400ADAE5A /* CusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2913C7A11A1A398400ADAE5A /* CusTableViewController.m */; };
+		2913C7A81A1A3E6F00ADAE5A /* cusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2913C7A71A1A3E6F00ADAE5A /* cusTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		2913C78F1A1A388D00ADAE5A /* cusViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cusViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2913C7941A1A388D00ADAE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2913C7951A1A388E00ADAE5A /* cusViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cusViewControllerTests.m; sourceTree = "<group>"; };
+		2913C7A01A1A398400ADAE5A /* CusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusTableViewController.h; sourceTree = "<group>"; };
+		2913C7A11A1A398400ADAE5A /* CusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusTableViewController.m; sourceTree = "<group>"; };
+		2913C7A61A1A3E6F00ADAE5A /* cusTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cusTableViewCell.h; sourceTree = "<group>"; };
+		2913C7A71A1A3E6F00ADAE5A /* cusTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cusTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		2913C76A1A1A388D00ADAE5A = {
 			isa = PBXGroup;
 			children = (
+				2913C79F1A1A389F00ADAE5A /* viewController */,
 				2913C7751A1A388D00ADAE5A /* cusViewController */,
 				2913C7921A1A388D00ADAE5A /* cusViewControllerTests */,
 				2913C7741A1A388D00ADAE5A /* Products */,
@@ -83,10 +90,6 @@
 		2913C7751A1A388D00ADAE5A /* cusViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2913C77A1A1A388D00ADAE5A /* AppDelegate.h */,
-				2913C77B1A1A388D00ADAE5A /* AppDelegate.m */,
-				2913C7801A1A388D00ADAE5A /* ViewController.h */,
-				2913C7811A1A388D00ADAE5A /* ViewController.m */,
 				2913C7831A1A388D00ADAE5A /* Main.storyboard */,
 				2913C7861A1A388D00ADAE5A /* Images.xcassets */,
 				2913C7881A1A388D00ADAE5A /* LaunchScreen.xib */,
@@ -99,6 +102,8 @@
 		2913C7761A1A388D00ADAE5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2913C77A1A1A388D00ADAE5A /* AppDelegate.h */,
+				2913C77B1A1A388D00ADAE5A /* AppDelegate.m */,
 				2913C7771A1A388D00ADAE5A /* Info.plist */,
 				2913C7781A1A388D00ADAE5A /* main.m */,
 			);
@@ -120,6 +125,19 @@
 				2913C7941A1A388D00ADAE5A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2913C79F1A1A389F00ADAE5A /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				2913C7801A1A388D00ADAE5A /* ViewController.h */,
+				2913C7811A1A388D00ADAE5A /* ViewController.m */,
+				2913C7A01A1A398400ADAE5A /* CusTableViewController.h */,
+				2913C7A11A1A398400ADAE5A /* CusTableViewController.m */,
+				2913C7A61A1A3E6F00ADAE5A /* cusTableViewCell.h */,
+				2913C7A71A1A3E6F00ADAE5A /* cusTableViewCell.m */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2913C7A21A1A398400ADAE5A /* CusTableViewController.m in Sources */,
+				2913C7A81A1A3E6F00ADAE5A /* cusTableViewCell.m in Sources */,
 				2913C77C1A1A388D00ADAE5A /* AppDelegate.m in Sources */,
 				2913C77F1A1A388D00ADAE5A /* cusViewController.xcdatamodeld in Sources */,
 				2913C7821A1A388D00ADAE5A /* ViewController.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CusTableViewController.h
 //  cusViewController
 //
 //  Created by Joseph on 2014/11/17.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "cusTableViewCell.h"
 
-@interface ViewController : UIViewController
-
+@interface CusTableViewController : UITableViewController
 
 @end
-
